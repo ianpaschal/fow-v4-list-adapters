@@ -1,0 +1,38 @@
+{
+  "name": "fow-list-parse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist",
+    "pretest": "npm run build",
+    "test": "node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@stylistic/eslint-plugin-ts": "^2.3.0",
+    "@stylistic/stylelint-config": "^2.0.0",
+    "@stylistic/stylelint-plugin": "^3.1.0",
+    "@types/node": "^22.15.15",
+    "@types/pdf-parse": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.1.5",
+    "pdfjs-dist": "^5.2.133"
+  }
+}
